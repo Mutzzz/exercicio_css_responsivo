@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid;
+    margin-bottom: 56px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container li {
+    list-style: none;
+}
+
+header .container a {
+    padding: 0.5em;
+}
+
+.sobre .container p,
+.sobre .container h2 {
+    padding-left: 3%;
+}
+
+.sobre .container h2 {
+    color:rgb(23, 91, 194);
+    font-size: 30px;
+}
+
+.sobre .container p {
+    padding-top: 10%;
+    font-size: 20px;
+}
+
+.sobre img {
+    width: 50%;
+}
+
+.sobre .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.produtos .container h1 {
+    padding-top: 10%;
+    font-size: 30px;
+}
+
+.produtos h1 {
+    padding-bottom: 1em;
+    border-bottom: 3px solid;
+    color: rgb(23, 91, 194);
+}
+
+.produtos .container img {
+    width: 90%;
+}
+
+.catalogo {
+    display: flex;
+}
+
+.catalogo p {
+    font-weight: bold;
+    padding-top: 0.5em;
+    font-size: 20px;
+}
+
+.catalogo footer {
+    color: #777777;
+    padding-top: 0.5em;
+}
+
+.catalogo button {
+    margin-top: 1em;
+    padding: 10px;
+    width: 90%;
+}
+
+.catalogo button {
+    background-color: rgb(23, 91, 194);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.catalogo button:hover {
+    background-color: darkblue;
+}

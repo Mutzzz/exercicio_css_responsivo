@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
+
 }
 
 body {
@@ -35,43 +36,44 @@ header .container a {
     padding: 0.5em;
 }
 
-.sobre .container p,
-.sobre .container h2 {
+#sobre .container p,
+#sobre .container h2 {
     padding-left: 3%;
 }
 
-.sobre .container h2 {
+#sobre .container h2 {
     color:rgb(23, 91, 194);
     font-size: 30px;
+
 }
 
-.sobre .container p {
-    padding-top: 10%;
-    font-size: 20px;
+#sobre .container p {
+    padding-top: 4%;
+    font-size: 22px;
 }
 
-.sobre img {
+#sobre img {
     width: 50%;
 }
 
-.sobre .container {
+#sobre .container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.produtos .container h1 {
-    padding-top: 10%;
+#produtos .container h1 {
+    padding-top: 4%;
     font-size: 30px;
 }
 
-.produtos h1 {
+#produtos h1 {
     padding-bottom: 1em;
     border-bottom: 3px solid;
     color: rgb(23, 91, 194);
 }
 
-.produtos .container img {
+#produtos .container img {
     width: 90%;
 }
 
@@ -112,3 +114,67 @@ header .container a {
 .catalogo button:hover {
     background-color: darkblue;
 }
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .catalogo {
+        display: grid;
+    }
+
+    #sobre > .container h2 {
+        padding-left: 0px;
+        padding-top: 5%;
+    }
+
+    #sobre > .container p {
+        font-size: 20px;
+        padding-left: 0px;
+    }
+
+    #sobre > .container {
+        display: grid
+    }
+
+    #sobre img {
+        width: 100%;
+    }
+
+    #produtos h1 {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px ) {
+    .container {
+        max-width: 90%;
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        clear: both;
+    }
+
+    #sobre > .container p {
+        font-size: 16px;
+        padding-top: 15px;
+        font-weight: bold;
+    }
+
+    
+
+    #produtos > .container h1 {
+        padding-top: 30px;
+    }
+
+    .catalogo footer {
+        font-size: 20px;
+    }
+
+    
+}
+
